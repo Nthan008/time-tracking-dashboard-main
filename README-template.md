@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
 Add a screenshot of your solution. Crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
 
@@ -38,7 +38,7 @@ Add a screenshot of your solution. Crop/optimize/edit your image however you lik
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: (https://github.com/Nthan008/time-tracking-dashboard-main)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
@@ -51,8 +51,6 @@ Add a screenshot of your solution. Crop/optimize/edit your image however you lik
 - CSS Grid
 - [Styled Components](https://styled-components.com/) - For styles
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
 ### What I learned
 
 Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
@@ -60,16 +58,102 @@ Use this section to recap over some of your major learnings while working throug
 To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<div class="menu-card">
+
+        <div class="card-report">
+            <img src="./images/image-jeremy.png" alt="image jeremy">
+            <div class="report">
+                <p>Report for</p>
+                <div class="name">Jeremy Robson</div>
+            </div>
+        </div>
+
+        <div class="menu">
+          <div class="menu-link" id="btn1">Daily</div>
+          <div class="menu-link menu-active" id="btn2">Weekly</div>
+          <div class="menu-link" id="btn3">Monthly</div>
+        </div>
+    </div>
+```
+```html
+<div class="regular-card work">
+        <div class="property-card">
+            <div class="row">
+                <div class="title">Work</div>
+                <div class="points">
+                    <div class="point"></div>
+                    <div class="point"></div>
+                    <div class="point"></div>
+                </div>
+            </div>
+
+            <div class="row-2" id="week">
+              <div class="hours">32hrs</div>
+              <div class="description">Last Week - 36hrs</div>
+          </div>
+          <div class="row-2" id="day">
+            <div class="hours">5hrs</div>
+            <div class="description">Yesterday - 7hrs</div>
+          </div>
+          <div class="row-2" id="month">
+            <div class="hours">103hrs</div>
+            <div class="description">Last Month - 128hrs</div>
+          </div>
+        </div>
+    </div>
+
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
+@media screen and (min-width: 570px) {
+    .container {
+      display: grid;
+      -ms-grid-columns: 48% 48%;
+          grid-template-columns: 48% 48%;
+    }
+    .menu-card {
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 2;
+      grid-column: 1 / span 2;
+    }
+    .menu-card .card-report {
+      gap: 3rem;
+    }
+    .regular-card .property-card .row-2 {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+    }
+    .regular-card .property-card .row-2 .hours {
+      font-size: 3rem;
+    }
+  }
 ```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+$(function () {
+    $(".row-2").hide();
+    $("#day").hide();
+    $("#month").hide();
+    $("#btn1").click(function () {
+        $("#week").hide();
+        $("#month").hide();
+        $("#day").show();
+    });
+    $("#btn2").click(function () {
+        $("#week").show();
+        $("#month").hide();
+        $("#day").hide();
+    });
+    $("#btn3").click(function () {
+        $("#week").hide();
+        $("#month").show();
+        $("#day").hide();
+    });
+});
+
 }
 ```
 
@@ -92,9 +176,9 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Your Detail 
 
-- FullName - [Add your name here]
-- StudentID - [Add your StudentID here]
-- BINUS Email - [Add your BINUS email here]
+- FullName - Carlo Nathanael Bessie
+- StudentID - 2602236685
+- BINUS Email - carlo.bessie@binus.ac.id
 
 **Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
