@@ -9,72 +9,201 @@
   <title>Frontend Mentor | Time tracking dashboard</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
-  Report for
-  Jeremy Robson
+    
+  <div class="container">
+    <!-- Menu card -->
+    <div class="menu-card">
 
-  Daily
-  Weekly
-  Monthly
+        <div class="card-report">
+            <img src="./images/image-jeremy.png" alt="image jeremy">
+            <div class="report">
+                <p>Report for</p>
+                <div class="name">Jeremy Robson</div>
+            </div>
+        </div>
 
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
+        <div class="menu">
+          <div class="menu-link" id="btn1">Daily</div>
+          <div class="menu-link menu-active" id="btn2">Weekly</div>
+          <div class="menu-link" id="btn3">Monthly</div>
+        </div>
+    </div>
 
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
+    <!-- Regular card -->
+    <div class="regular-card work">
+        <div class="property-card">
+            <div class="row">
+                <div class="title">Work</div>
+                <div class="points">
+                    <div class="point"></div>
+                    <div class="point"></div>
+                    <div class="point"></div>
+                </div>
+            </div>
 
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
+            <div class="row-2" id="week">
+              <div class="hours">32hrs</div>
+              <div class="description">Last Week - 36hrs</div>
+          </div>
+          <div class="row-2" id="day">
+            <div class="hours">5hrs</div>
+            <div class="description">Yesterday - 7hrs</div>
+          </div>
+          <div class="row-2" id="month">
+            <div class="hours">103hrs</div>
+            <div class="description">Last Month - 128hrs</div>
+          </div>
+        </div>
+    </div>
 
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
+    <!-- Regular card -->
+    <div class="regular-card play">
+        <div class="property-card">
+            <div class="row">
+                <div class="title">Play</div>
+                <div class="points">
+                    <div class="point"></div>
+                    <div class="point"></div>
+                    <div class="point"></div>
+                </div>
+            </div>
 
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
+            <div class="row-2" id="week">
+                <div class="hours">10hrs</div>
+                <div class="description">Last Week - 8hrs</div>
+            </div>
+            <div class="row-2" id="day">
+              <div class="hours">1hrs</div>
+              <div class="description">Yesterday - 2hrs</div>
+            </div>
+            <div class="row-2" id="month">
+              <div class="hours">23hrs</div>
+              <div class="description">Last Month - 29hrs</div>
+            </div>
+          </div>
+    </div>
 
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
+    <!-- Regular card -->
+    <div class="regular-card study">
+        <div class="property-card">
+            <div class="row">
+                <div class="title">Study</div>
+                <div class="points">
+                    <div class="point"></div>
+                    <div class="point"></div>
+                    <div class="point"></div>
+                </div>
+            </div>
+
+            <div class="row-2" id="week">
+              <div class="hours">4hrs</div>
+              <div class="description">Last Week - 7hrs</div>
+          </div>
+          <div class="row-2" id="day">
+            <div class="hours">0hrs</div>
+            <div class="description">Yesterday - 1hrs</div>
+          </div>
+          <div class="row-2" id="month">
+            <div class="hours">13hrs</div>
+            <div class="description">Last Month - 19hrs</div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Regular card -->
+    <div class="regular-card exercise">
+        <div class="property-card">
+            <div class="row">
+                <div class="title">Exercise</div>
+                <div class="points">
+                    <div class="point"></div>
+                    <div class="point"></div>
+                    <div class="point"></div>
+                </div>
+            </div>
+
+            <div class="row-2" id="week">
+              <div class="hours">4hrs</div>
+              <div class="description">Last Week - 5hrs</div>
+          </div>
+          <div class="row-2" id="day">
+            <div class="hours">1hrs</div>
+            <div class="description">Yesterday - 1hrs</div>
+          </div>
+          <div class="row-2" id="month">
+            <div class="hours">11hrs</div>
+            <div class="description">Last Month - 18hrs</div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Regular card -->
+    <div class="regular-card social">
+        <div class="property-card">
+            <div class="row">
+                <div class="title">Social</div>
+                <div class="points">
+                    <div class="point"></div>
+                    <div class="point"></div>
+                    <div class="point"></div>
+                </div>
+            </div>
+
+            <div class="row-2" id="week">
+              <div class="hours">5hrs</div>
+              <div class="description">Last Week - 10hrs</div>
+          </div>
+          <div class="row-2" id="day">
+            <div class="hours">1hrs</div>
+            <div class="description">Yesterday - 3hrs</div>
+          </div>
+          <div class="row-2" id="month">
+            <div class="hours">21hrs</div>
+            <div class="description">Last Month - 23hrs</div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Regular card -->
+    <div class="regular-card selfcare">
+        <div class="property-card">
+            <div class="row">
+                <div class="title">Self care</div>
+                <div class="points">
+                    <div class="point"></div>
+                    <div class="point"></div>
+                    <div class="point"></div>
+                </div>
+            </div>
+
+            <div class="row-2" id="week">
+              <div class="hours">2hrs</div>
+              <div class="description">Last Week - 2hrs</div>
+          </div>
+          <div class="row-2" id="day">
+            <div class="hours">0hrs</div>
+            <div class="description">Yesterday - 1hrs</div>
+          </div>
+          <div class="row-2" id="month">
+            <div class="hours">7hrs</div>
+            <div class="description">Last Month - 11hrs</div>
+          </div>
+        </div>
+    </div>
+
+</div>
+
 
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="script.js"></script>  
+
 </body>
 </html>
