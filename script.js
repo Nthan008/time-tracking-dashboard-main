@@ -1,5 +1,4 @@
 $(function () {
-    $(".row-2").hide();
     $("#day").hide();
     $("#month").hide();
     $("#btn1").click(function () {
